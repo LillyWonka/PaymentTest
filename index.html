@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Payment test</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <img src="img/logo.svg" alt="logo">
+        <a href="#">Edit details in your cover letter</a>
+    </nav>
+    <main>
+        <h2>Your profile is ready. Get your personalized cover letter now for less than the price of a cup of coffee and
+            improve your career.</h2>
+        <article class="offers">
+            <section class="plans">
+                <div class="trial">
+                    <div class="limited-offer loffer-desktop">
+                        <h3>LIMITED SUMMER OFFER</h3>
+                        <p id="countdown">02d : 24h : 25m </p>
+                    </div>
+                    <img src="img/trial-img.svg" alt="trial">
+                    <h3>Trial</h3>
+                    <p id="limited-offer">The first week only for</p>
+                    <p><b class="price">$0.99</b></p>
+                    <p class="bill-desc">Rebills at $8.99 per month after your trial is completed.</p>
+                    <button id="choose-trial">Get started</button>
+                </div>
+                <div class="annual">
+                    <img src="img/annual-img.svg" alt="annual">
+                    <h3>Annual Plan</h3>
+                    <p><b class="price">$39.00</b>/year</p>
+                    <p class="bill-desc">Your Premium plan will auto-renew.<br> Cancel any time.</p>
+                    <button id="choose-annual">Get started</button>
+                </div>
+            </section>
+            <section class="payment">
+                <div class="chosen-plan chosen-trial">
+                    <div class="limited-offer">
+                        <h3>LIMITED SUMMER OFFER</h3>
+                        <p id="countdown">02d : 24h : 25m </p>
+                    </div>
+                    <div class="plan-description">
+                        <img src="img/trial-img.svg" alt="trial">
+                        <div class="text">
+                            <h3>Trial</h3>
+                            <p id="limited-offer">The first week only for</p>
+                            <p><b class="price">$0.99</b></p>
+                            <p>Rebills at $8.99 per month after your trial is completed.</p>
+                        </div>
+                        <button class="change-plan">Change</button>
+                    </div>
+                </div>
+                <div class="chosen-plan chosen-annual">
+                    <div class="plan-description">
+                        <img src="img/annual-img.svg" alt="annual">
+                        <div class="text">
+                            <h3>Annual Plan</h3>
+                            <p><b class="price">$39.00</b> / year</p>
+                            <p>Your Premium plan will auto-renew. Cancel any time.</p>
+                        </div>
+                        <button class="change-plan">Change</button>
+                    </div>
+                </div>
+                <img class="cards" src="img/cards.svg" alt="cards">
+                <form class="card-credentials" method="POST">
+                    <label for="card-number">Card number<input required type="text" pattern="[0-9]{12}"
+                            placeholder="Enter card number" class="required" name="card-number"
+                            id="card-number"></label>
+                    <fieldset class="expiers">
+                        <label for="exp-month">Exp.month<select required name="exp-month" id="exp-month" class="required">
+                                <option value="" disabled selected>Month</option>
+                                <option value="1">1 - January</option>
+                                <option value="2">2 - February</option>
+                                <option value="3">3 - March</option>
+                                <option value="4">4 - April</option>
+                                <option value="5">5 - May</option>
+                                <option value="6">6 - June</option>
+                                <option value="7">7 - July</option>
+                                <option value="8">8 - August</option>
+                                <option value="9">9 - September</option>
+                                <option value="10">10 - October</option>
+                                <option value="11">11 - November</option>
+                                <option value="12">12 - December</option>
+                            </select></label>
+                        <span>/</span>
+                        <label for="exp-year">Exp. year<select required name="exp-year" id="exp-year" class="required">
+                                <option value="" disabled selected>Year</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select></label>
+                    </fieldset>
+                    <label for="cardholder-first-name">Cardholder First Name<input type="text" class="required"
+                            required placeholder="Enter First Name" name="cardholder-first-name"></label>
+                    <label for="cardholder-last-name">Cardholder Last Name<input type="text" class="required"
+                            required placeholder="Enter Last Name" name="cardholder-last-name"></label>
+                    <label for="confirm"><button class="confirm" disabled="disabled">Confirm</button></label>
+                    <span class="secure">Secure credit card payment</span>
+                </form>
+                <p class="terms">Your card will be automatically attached to your profile, you can remove it at any
+                    time. By clicking
+                    “Confirm” you agree to the <a href="#">Terms & Conditions</a></p>
+            </section>
+            <section class="advantages">
+                <div class="ribbon">
+                    <img src="img/best-price-header.svg" alt="">
+                </div>
+                <h3>Your plan will include:</h3>
+                <ul>
+                    <li>Unlimited Cover Letters</li>
+                    <li> 50+ custom templates </li>
+                    <li>Creative designs </li>
+                    <li>Custom backgrounds</li>
+                    <li>More than 15 color schemes</li>
+                    <li>Create multiple versions </li>
+                    <li>Custom sections</li>
+                    <li>Unlimited PDF downloads</li>
+                    <li>Email sharing</li>
+                </ul>
+            </section>
+        </article>
+        <article class="testimonials">
+            <section>
+                <img src="img/deborah-testimonials.png" alt="Deborah">
+                <div>
+                    <h3>Deborah H.</h3>
+                    <p>“It is important to show your skills in a cover letter; I think you have already heard it
+                        before”. Only in this case, you will have an opportunity to prove your abilities in the
+                        interview. I decided to take the help of qualified professionals. My skills were demonstrated in
+                        the right way.”</p>
+                </div>
+            </section>
+            <section>
+                <img src="img/cooper-testimonials.png" alt="Cooper">
+                <div class="people">
+                    <h3>Cooper D.</h3>
+                    <p>“I always love a wide selection of something, and the CL has satisfied my needs in this case.
+                        Many variations of strengths and designs impressed me and made me push the matter through. And I
+                        did not regret my choice when the company sent me an offer for cooperation.”</p>
+                </div>
+            </section>
+        </article>
+        <article class="testimonials">
+            <section>
+                <img src="img/deborah-testimonials.png" alt="Deborah">
+                <div>
+                    <h3>Deborah H.</h3>
+                    <p>“It is important to show your skills in a cover letter; I think you have already heard it
+                        before”. Only in this case, you will have an opportunity to prove your abilities in the
+                        interview. I decided to take the help of qualified professionals. My skills were demonstrated in
+                        the right way.”</p>
+                </div>
+            </section>
+            <section>
+                <img src="img/cooper-testimonials.png" alt="Cooper">
+                <div class="people">
+                    <h3>Cooper D.</h3>
+                    <p>“I always love a wide selection of something, and the CL has satisfied my needs in this case.
+                        Many variations of strengths and designs impressed me and made me push the matter through. And I
+                        did not regret my choice when the company sent me an offer for cooperation.”</p>
+                </div>
+            </section>
+        </article>
+        <article class="testimonials">
+            <section>
+                <img src="img/deborah-testimonials.png" alt="Deborah">
+                <div>
+                    <h3>Deborah H.</h3>
+                    <p>“It is important to show your skills in a cover letter; I think you have already heard it
+                        before”. Only in this case, you will have an opportunity to prove your abilities in the
+                        interview. I decided to take the help of qualified professionals. My skills were demonstrated in
+                        the right way.”</p>
+                </div>
+            </section>
+            <section>
+                <img src="img/cooper-testimonials.png" alt="Cooper">
+                <div class="people">
+                    <h3>Cooper D.</h3>
+                    <p>“I always love a wide selection of something, and the CL has satisfied my needs in this case.
+                        Many variations of strengths and designs impressed me and made me push the matter through. And I
+                        did not regret my choice when the company sent me an offer for cooperation.”</p>
+                </div>
+            </section>
+        </article>
+        <div class="carousel">
+            <a class="slider-bullet active"></a>
+            <a class="slider-bullet"></a>
+            <a class="slider-bullet"></a>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <img src="img/logo-footer.svg" alt="logo-footer">
+            <a href="#">Private policy</a>
+            <a href="#">Term of use</a>
+        </section>
+        <p class="copyright">© 2019, My Letter. All rights reserved.</p>
+    </footer>
+    <script src="script/jquery-3.4.1.min.js"></script>
+    <script src="script/index.js"></script>
+</body>
+
+</html>
